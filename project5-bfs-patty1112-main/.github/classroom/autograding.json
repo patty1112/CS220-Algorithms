@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "run_tests_timed",
+      "setup": "cmake . ; make",
+      "run": "./run-tests",
+      "input": "",
+      "output": ".*\\([1-4]?[0-9]{0,3} ms total\\)\\n\\[  PASSED  \\] 11 tests.*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
